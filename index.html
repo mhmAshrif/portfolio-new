@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/636dbc7376.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+         <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi I'm <span>Ashrif Hilmy</span> <br> From Srilanka</h1>
+            </div>
+         </div>
+    </div>
+
+    <!---------about----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ashrif4.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there! I'm Ashrif, a software engineering student with expertise in <br>
+                        frontend and backend development, UI/UX design, and mobile app development. <br> 
+                        I'm passionate about crafting seamless digital experiences and solving complex problems through code. <br>
+                        With a keen eye for design and a knack for optimization, I'm committed to delivering high-quality <br>
+                        software that exceeds expectations. Let's collaborate and bring your ideas to life!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Developer</span><br>Designing Web/App interfaces</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-current</span><br>Full Stack Developer</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-current</span><br>Saegis Campus</li>
+                            <p>Bsc(Hons)Software Engineering</p>
+                            <li><span>2023</span><br>AWS Cloud computing course </li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------Services----------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the art and science of creating visually captivating and user-friendly websites. It involves combining aesthetics with functionality to craft engaging online experiences.It's about creating an inviting digital space that resonates with visitors and encourages them to explore further.</p>
+                       <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-light fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI (User Interface) design focuses on the look and feel of the product, while UX (User Experience) design emphasizes the overall experience, ensuring it's intuitive and enjoyable. It's about creating interfaces that are visually appealing, easy to use, and meet the user's needs effectively, resulting in a seamless and satisfying interaction.</p>
+                       <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>App development encompasses crafting software applications for mobile devices, catering to both Android and iOS platforms. This process involves coding, testing, and deploying applications that offer a range of functionalities, from productivity tools to entertainment platforms, tailored to users' needs and preferences.</p>
+                       <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+     
+    <!-------------------portfolio----------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg" >
+                    <div class="layer">
+                        <h3>Text to Voice Converter</h3>
+                        <p>An online taxi system facilitates the booking, tracking, and payment of taxi services through a digital platform. </p>
+                        <a href="https://mhmashrif.github.io/voice-converter/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpg" >
+                    <div class="layer">
+                        <h3>Travel Website</h3>
+                        <p>An e-commerce website enables online buying and selling of goods or services. </p>
+                        <a href=" https://mhmashrif.github.io/travel-site/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg" >
+                    <div class="layer">
+                        <h3>Dental Care Website</h3>
+                        <p>An online shopping app allows users to browse, purchase, and track orders conveniently through a mobile device.</p>
+                        <a href="https://mhmashrif.github.io/dental-care/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!---------------------contact----------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>mhmashrif6141@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i>+94 770123668</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/mohammed.ashrif.737?mibextid=ZbWKwL "><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ashrif_hilmy?igsh=NGN2dWJjendiZzdr "><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/Mhmashrif?t=RdWn-6yzQpfoPUN5j1YoMw&s=09"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamed-ashrif-17b3a1240/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="file:///C:/Users/Dell/Desktop/Portfolio/images/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message"  placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright 	&#169; Ashrif</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyFuGaI4le6jzq2jtAs6IP4o38URnHRDLjCyW3KOY3K9oh58kTgbVahlgWjUQwDZSJ4/exec'
+        const form = document.forms['submit-to-google-sheet']
+        constmsg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML ="Message Sent successfully"
+        setTimeout(function(){
+            msg.innerHTML =""
+        },5000)
+    form.reset()
+})
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
